@@ -14,6 +14,7 @@ export const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
   font-weight: lighter;
+  z-index: 2;
 `;
 
 export const Image = styled.div`
@@ -22,6 +23,7 @@ export const Image = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+    z-index: 2;
   }
 `;
 
