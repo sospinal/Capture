@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
 import Toggle from "../components/Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -9,8 +10,8 @@ const FaqSection = () => {
       <h2>
         Any questions? <span>FAQ</span>
       </h2>
-      <Toggle title="How do I start?">
-        <div className="question">
+      <AnimateSharedLayout>
+        <Toggle title="How do I start?">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -18,10 +19,8 @@ const FaqSection = () => {
               possimus.
             </p>
           </div>
-        </div>
-      </Toggle>
-      <Toggle title="Daily schedule">
-        <div className="question">
+        </Toggle>
+        <Toggle title="Daily schedule">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -29,10 +28,8 @@ const FaqSection = () => {
               possimus.
             </p>
           </div>
-        </div>
-      </Toggle>
-      <Toggle title="Different payment methods">
-        <div className="question">
+        </Toggle>
+        <Toggle title="Different payment methods">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -40,10 +37,8 @@ const FaqSection = () => {
               possimus.
             </p>
           </div>
-        </div>
-      </Toggle>
-      <Toggle title="What prodcuts do you offer">
-        <div className="question">
+        </Toggle>
+        <Toggle title="What prodcuts do you offer">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
@@ -51,8 +46,8 @@ const FaqSection = () => {
               possimus.
             </p>
           </div>
-        </div>
-      </Toggle>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
