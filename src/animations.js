@@ -87,3 +87,12 @@ export const scrollReveal = {
     },
   },
 };
+
+export const skewMovies = {
+  hidden: { skew: "45deg", opacity: 0, transition: { duration: 1 } },
+  show: {
+    skew: "0deg",
+    opacity: 1,
+    transition: { ease: "easeOut", duration: 1 },
+  },
+};
