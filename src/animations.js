@@ -8,7 +8,7 @@ export const pageAnimation = {
     y: 0,
     transition: {
       duration: 0.5,
-      when: "beforeChildren",
+      // when: "beforeChildren",
       staggerChildren: 0.25,
     },
   },
@@ -88,10 +88,10 @@ export const scrollReveal = {
   },
 };
 
-export const skewMovies = {
-  hidden: { skew: "45deg", opacity: 0, transition: { duration: 1 } },
+export const widthMovies = {
+  hidden: { width: "30%", opacity: 0, transition: { duration: 1 } },
   show: {
-    skew: "0deg",
+    width: "100%",
     opacity: 1,
     transition: { ease: "easeOut", duration: 1 },
   },
