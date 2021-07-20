@@ -14,7 +14,7 @@ import {
   lineAnim,
   slider,
   sliderContainer,
-  skewMovies,
+  widthMovies,
 } from "../animations";
 import { useScroll } from "../components/useScroll";
 
@@ -29,6 +29,7 @@ const OurWork = () => {
       animate="show"
       exit="exit"
       style={{ background: "#fff" }}
+      layout="position"
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
@@ -48,7 +49,7 @@ const OurWork = () => {
       <Hide>
         <Movie
           ref={element2}
-          variants={skewMovies}
+          variants={widthMovies}
           initial="hidden"
           animate={controls2}
         >
@@ -68,7 +69,7 @@ const OurWork = () => {
       <Hide>
         <Movie
           ref={element3}
-          variants={skewMovies}
+          variants={widthMovies}
           initial="hidden"
           animate={controls3}
         >
@@ -118,9 +119,9 @@ const Hide = styled.div`
 const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
-  top: 10%;
+  top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fffebf;
   z-index: 2;
 `;
