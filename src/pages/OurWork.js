@@ -17,6 +17,7 @@ import {
   widthMovies,
 } from "../animations";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   const [element2, controls2] = useScroll();
@@ -86,6 +87,7 @@ const OurWork = () => {
           </Link>
         </Movie>
       </Hide>
+      <ScrollTop />
     </Work>
   );
 };
