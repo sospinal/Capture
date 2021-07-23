@@ -1,7 +1,7 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300,
+    y: -300,
   },
   show: {
     opacity: 1,
@@ -88,8 +88,17 @@ export const scrollReveal = {
   },
 };
 
+let movieWidth = "30%";
+if (window.innerWidth <= 700 && window.innerWidth > 560) {
+  movieWidth = "50%";
+} else if (window.innerWidth <= 560 && window.innerWidth > 500) {
+  movieWidth = "60%";
+} else if (window.innerWidth <= 500) {
+  movieWidth = "80%";
+}
+
 export const widthMovies = {
-  hidden: { width: "30%", opacity: 0, transition: { duration: 1 } },
+  hidden: { width: movieWidth, opacity: 0, transition: { duration: 1 } },
   show: {
     width: "100%",
     opacity: 1,
