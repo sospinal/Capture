@@ -12,13 +12,13 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About us</Link>
+          <Link to="/">About us</Link>
         </li>
         <li>
-          <Link to="/work">2. Our work</Link>
+          <Link to="/work">Our work</Link>
         </li>
         <li>
-          <Link to="/contact">3. Contact us</Link>
+          <Link to="/contact">Contact us</Link>
         </li>
       </ul>
     </StyledNav>
@@ -52,6 +52,23 @@ const StyledNav = styled.nav`
   li {
     padding-left: 10rem;
     position: relative;
+  }
+  @media all and (max-width: 1008px) {
+    flex-direction: column;
+    padding: 1rem;
+    #logo {
+      display: inline-block;
+      padding: 1rem;
+    }
+    ul {
+      padding: 1.5rem;
+      justify-content: space-around;
+      width: 100%;
+      text-align: center;
+      li {
+        padding: 0;
+      }
+    }
   }
 `;
 

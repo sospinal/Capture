@@ -66,6 +66,9 @@ const ServicesSection = () => {
 const Services = styled(About)`
   h2 {
     padding-bottom: 5rem;
+    @media all and (max-width: 1008px) {
+      font-size: 3rem;
+    }
   }
   p {
     width: 70%;
@@ -76,18 +79,50 @@ const Services = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media all and (max-width: 1008px) {
+    justify-content: center;
+  }
 `;
 
 const Card = styled.div`
   flex-basis: 20rem;
+  @media all and (max-width: 1300px) {
+    flex-basis: 14rem;
+    padding-right: 1rem;
+  }
+  @media all and (max-width: 450px) {
+    flex-basis: 10rem;
+    margin: 1.2rem;
+    padding-right: 0;
+  }
+
+  @media all and (max-width: 380px) {
+    flex-basis: 10rem;
+  }
+
+  p {
+    margin: auto;
+  }
+
   .icon {
     display: flex;
     align-items: center;
+
     h3 {
       margin-left: 1rem;
       background: white;
       color: black;
       padding: 1rem;
+    }
+
+    @media all and (max-width: 450px) {
+      img {
+        width: 28%;
+      }
+      h3 {
+        margin-left: 1rem;
+        padding: 0.8rem;
+      }
     }
   }
 `;

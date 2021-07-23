@@ -57,11 +57,20 @@ const HeadLine = styled.div`
   min-height: 90vh;
   padding-top: 20vh;
   position: relative;
+
   h2 {
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -20%);
+    text-align: center;
+    @media all and (max-width: 560px) {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      width: 25rem;
+    }
   }
   img {
     width: 100%;
@@ -76,10 +85,19 @@ const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media all and (max-width: 1200px) {
+    display: block;
+  }
+  @media all and (max-width: 800px) {
+    margin: auto;
+  }
 `;
 
 const AwardStyle = styled.div`
   padding: 5rem;
+  @media all and (max-width: 1008px) {
+    padding: 5rem 3rem 2rem;
+  }
   h3 {
     font-size: 2rem;
   }
