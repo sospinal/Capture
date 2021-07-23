@@ -7,6 +7,8 @@ import { titleAnim, fade, photoAnim } from "../animations";
 //SVG
 import Wave from "./Wave";
 
+import { Link } from "react-router-dom";
+
 const AboutSection = () => {
   return (
     <About>
@@ -27,17 +29,15 @@ const AboutSection = () => {
             Contact us for any photography or videography ideas that you have.
             We have professionals with mazing skills.
           </motion.p>
-          <motion.button variants={fade}>Contact us</motion.button>
+          <Link to="/contact">
+            <motion.button variants={fade}>Contact us</motion.button>
+          </Link>
         </motion.div>
-        <Image>
-          <motion.img
-            variants={photoAnim}
-            src={home1}
-            alt="Guy with a camara"
-          />
-        </Image>
-        <Wave />
       </Description>
+      <Image>
+        <motion.img variants={photoAnim} src={home1} alt="Guy with a camara" />
+      </Image>
+      <Wave />
     </About>
   );
 };
