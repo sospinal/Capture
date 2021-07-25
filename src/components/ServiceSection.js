@@ -6,7 +6,7 @@ import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 //styles
 import { About, Description, Image } from "../styles";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { scrollReveal } from "../animations";
 
 import { useScroll } from "./useScroll";
@@ -85,7 +85,7 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 18rem;
   @media all and (max-width: 1300px) {
     flex-basis: 14rem;
     padding-right: 1rem;
@@ -102,6 +102,11 @@ const Card = styled.div`
 
   p {
     margin: auto;
+  }
+  @media all and (min-width: 1100px) {
+    p {
+      margin: 0;
+    }
   }
 
   .icon {
